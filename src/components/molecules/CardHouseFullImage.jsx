@@ -26,6 +26,7 @@ function CardHouseFullImage({ title, price, img }) {
   return (
     <CardHouseFullImageStyled>
       <div>
+        {/* El objetivo de usar styled-componentes es evitar los className */}
         <Title as="h4" margin="0" color={colors.white} className="ellipsis2">
           {title}
         </Title>

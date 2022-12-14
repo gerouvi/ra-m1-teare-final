@@ -59,8 +59,10 @@ const CARDS = [
   },
 ]
 
+// Bien traido el uso de styled components
 const HousesStyled = styled(Grid)``
 
+// Debería de estar en organisms
 function Houses() {
   return (
     <HousesStyled rowgap="20px" columngap="10px">

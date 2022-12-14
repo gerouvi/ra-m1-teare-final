@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { colors, dimensions } from '../../styles'
 
+// Debería de ser un JSX
 const Button = styled.button`
   padding: 5px 15px;
   background-color: ${({ bg }) => bg || colors.blue};

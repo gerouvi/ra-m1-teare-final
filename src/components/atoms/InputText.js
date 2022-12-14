@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import colors from '../../styles/colors'
 import dimensions from '../../styles/dimensions'
 
+// Esto debería de ser un JSX con PropTypes. Al igual que en el ejercicio anterior
+// Puedes combinar Styled con JSX
 const InputText = styled.input`
   width: ${({ width }) => width || '360px'};
   padding: ${dimensions.padding.xs} ${dimensions.padding.sm};

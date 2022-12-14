@@ -1,4 +1,6 @@
 function SearchIcon(props) {
+  // Deberías de tener un componente Icon que renderice multiples iconos en lugar de un componente por cada icono
+  // Intenta utilizar algo como google font icons: https://fonts.google.com/icons
   return (
     <svg
       {...props}

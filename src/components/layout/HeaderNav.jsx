@@ -13,10 +13,12 @@ const HeaderNavStyled = styled.nav`
   }
 `
 
+// Debería llamarse Header a secas
 function HeaderNav() {
   return (
     <HeaderNavStyled>
       <AnchorText href="#">MIPISO.com.es</AnchorText>
+      {/* Este seria un componente de navegación que debería de estar en molecules */}
       <div>
         <AnchorText href="#">Buscador</AnchorText>
         <AnchorText href="#">Datos</AnchorText>
