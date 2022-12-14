@@ -21,4 +21,7 @@ function SubHeader() {
   )
 }
 
+// Puedes ir un nivel más allá y hacer export defaul styled(SubHeader)``
+// Pero para que funcione deberas de hacer uso de className en el componente
+// La mejor manera es con spread props
 export default SubHeader

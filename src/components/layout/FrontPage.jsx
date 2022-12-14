@@ -21,6 +21,7 @@ const FrontPageStyled = styled.main`
   }
 `
 
+// Debería llamarse Home y estar en la carpeta pages
 function FrontPage() {
   return (
     <FrontPageStyled>

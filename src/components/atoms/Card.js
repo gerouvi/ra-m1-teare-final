@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { colors } from '../../styles'
 
+// Darle el width y el height es un error, haces que no sea reutilizable
 const Card = styled.div`
   width: 200px;
   height: 210px;
