@@ -1,6 +1,6 @@
-import FrontPage from './components/layout/FrontPage'
+import Home from './components/Pages/Home'
 
 function App() {
-  return <FrontPage />
+  return <Home />
 }
 export default App

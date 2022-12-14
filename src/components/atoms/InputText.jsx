@@ -1,8 +1,9 @@
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import colors from '../../styles/colors'
 import dimensions from '../../styles/dimensions'
 
-const InputText = styled.input`
+const InputTextStyled = styled.input`
   width: ${({ width }) => width || '360px'};
   padding: ${dimensions.padding.xs} ${dimensions.padding.sm};
   border-radius: ${dimensions.xs};
@@ -17,5 +18,13 @@ const InputText = styled.input`
     outline: 2.5px solid ${colors.gray};
   }
 `
+
+function InputText({ onChange, ...props }) {
+  return <InputTextStyled onChange={onChange} {...props} />
+}
+
+InputText.propTypes = {
+  onChange: PropTypes.func,
+}
 
 export default styled(InputText)``

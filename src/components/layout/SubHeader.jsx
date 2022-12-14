@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { colors } from '../../styles'
 import dimensions from '../../styles/dimensions'
-import { InputText, SearchIcon } from '../atoms'
+import { InputText } from '../atoms'
 import Icon from '../atoms/IconButton'
 
 const SubHeaderStyled = styled.div`
@@ -11,14 +11,14 @@ const SubHeaderStyled = styled.div`
   padding: ${dimensions.padding.sm} ${dimensions.padding.base};
 `
 
-function SubHeader() {
+function SubHeader({ ...props }) {
   return (
-    <SubHeaderStyled>
+    <SubHeaderStyled {...props}>
       <InputText placeholder="Piso, chalet o garaje..." />
       <InputText placeholder="Madrid, Barcelona o Zaragoza..." />
-      <Icon icon={<SearchIcon />} />
+      <Icon icon="settings" />
     </SubHeaderStyled>
   )
 }
 
-export default SubHeader
+export default styled(SubHeader)``

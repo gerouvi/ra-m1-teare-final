@@ -30,7 +30,7 @@ const CardHouseStyled = styled(Card)`
     }
   }
 
-  .ellipsis {
+  ${Title} {
     padding-right: 10px;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -45,7 +45,7 @@ function CardHouse({ title, price, img }) {
         <img alt={title} src={img} />
       </div>
       <div className="aa">
-        <Title as="h5" margin="0" className="ellipsis" color={colors.gray}>
+        <Title as="h5" margin="0" color={colors.gray}>
           {title}
         </Title>
         <span>

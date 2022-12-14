@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import dimensions from '../../styles/dimensions'
 import { AnchorText } from '../atoms'
 
-const HeaderNavStyled = styled.nav`
+const HeaderStyled = styled.nav`
   display: flex;
   justify-content: space-between;
   padding: ${dimensions.padding.base};
@@ -13,17 +13,17 @@ const HeaderNavStyled = styled.nav`
   }
 `
 
-function HeaderNav() {
+function Header() {
   return (
-    <HeaderNavStyled>
+    <HeaderStyled>
       <AnchorText href="#">MIPISO.com.es</AnchorText>
       <div>
         <AnchorText href="#">Buscador</AnchorText>
         <AnchorText href="#">Datos</AnchorText>
         <AnchorText href="#">Mi Perfil</AnchorText>
       </div>
-    </HeaderNavStyled>
+    </HeaderStyled>
   )
 }
 
-export default HeaderNav
+export default Header

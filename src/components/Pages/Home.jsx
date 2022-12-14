@@ -2,9 +2,10 @@ import styled from 'styled-components'
 import { dimensions } from '../../styles'
 import Grid from '../../styles/Grid'
 import { Button } from '../atoms'
-import { HeaderNav, SubHeader, Houses } from './index'
+import { HeaderNav, SubHeader } from '../layout/index'
+import Houses from '../organisms/Houses'
 
-const FrontPageStyled = styled.main`
+const HomeStyled = styled.main`
   section {
     padding: ${dimensions.padding.base};
   }
@@ -21,9 +22,9 @@ const FrontPageStyled = styled.main`
   }
 `
 
-function FrontPage() {
+function Home() {
   return (
-    <FrontPageStyled>
+    <HomeStyled>
       <header>
         <HeaderNav />
         <SubHeader />
@@ -35,8 +36,8 @@ function FrontPage() {
           <Button className="center">Cargar más</Button>
         </Grid>
       </section>
-    </FrontPageStyled>
+    </HomeStyled>
   )
 }
 
-export default FrontPage
+export default Home

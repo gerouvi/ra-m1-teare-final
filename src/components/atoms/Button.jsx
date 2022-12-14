@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { colors, dimensions } from '../../styles'
 
-const Button = styled.button`
+const ButtonStyled = styled.button`
   padding: 5px 15px;
   background-color: ${({ bg }) => bg || colors.blue};
   font-size: ${({ fontsize }) => fontsize || '13px'};
@@ -15,5 +15,9 @@ const Button = styled.button`
     transform: scale(0.8);
   }
 `
+
+function Button({ ...props }) {
+  return <ButtonStyled {...props} />
+}
 
 export default styled(Button)``

@@ -26,7 +26,7 @@ function CardHouseFullImage({ title, price, img }) {
   return (
     <CardHouseFullImageStyled>
       <div>
-        <Title as="h4" margin="0" color={colors.white} className="ellipsis2">
+        <Title as="h4" margin="0" color={colors.white}>
           {title}
         </Title>
         <span>{price}€</span>
