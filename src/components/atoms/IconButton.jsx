@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import { colors } from '../../styles'
 
+// Estas mezclando varias cosas
+// 1. El componente Icon no tiene porque tener todo lo necesario para renderizar el botón. Ya tienes un componente Button. Quizas tengas que hacer <Button><Icon icon="search" /></Button>
 const Icon = styled.span.attrs(({ icon }) => ({
   children: icon,
   className: 'material-symbols-outlined',
@@ -19,4 +21,6 @@ const Icon = styled.span.attrs(({ icon }) => ({
     }`};
 `
 
+// Ya esun styled component, no necesitas volver a exportarlo con styled()``.
+// Al ser un styled component no necesitas que sea un .jsx. Puedes usar .js
 export default styled(Icon)``
