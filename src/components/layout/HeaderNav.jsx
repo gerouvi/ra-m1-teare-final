@@ -13,10 +13,12 @@ const HeaderStyled = styled.nav`
   }
 `
 
+// Si el componente se llama Header, el archivo debería llamarse Header.jsx
 function Header() {
   return (
     <HeaderStyled>
       <AnchorText href="#">MIPISO.com.es</AnchorText>
+      {/* Continua sin haber un componente de molecules para la navegación como se indico en la primera revisión */}
       <div>
         <AnchorText href="#">Buscador</AnchorText>
         <AnchorText href="#">Datos</AnchorText>
